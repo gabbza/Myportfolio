@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Aquí colocamos el Menú Encabezado-->
+ <div class="contenedor-header">
+    <header>
+        <div class="logo">
+            <a href="#"> Itzá Gabriela</a>
+
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#inicio" onclick="seleccionar()">HOME</a></li>
+                <li><a href="#sobremi" onclick="seleccionar()">ABOUT</a></li>
+                <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                <li><a href="#portafolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                <li><a href="#contacto" onclick="seleccionar()">CONTACT</a></li>
+            </ul>
+
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+ </div>
+
+ <!-- Aqui colocamos la SECCION INICIO-->
+  <section id="inicio" class="inicio">
+    <div class="contenido-banner">
+        <div class="contenedor-img">
+            <img src="img/20220930_162056.jpg" alt="yo">
+
+        </div>
+        <h1>Itzá Gabriela Delgado Guarneros</h1>
+        <h2>Programmer - Web Developer: Back End and Front End</h2>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/gabrieladguarneros/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/gabbza"><i class="fa-brands fa-github"></i></a>
+
+        </div>
+
+    </div>
+
+  </section>
+
+  <!--Aquí colocamos la SECCION SOBRE MÍ-->
+  <section id="sobremi" class="sobremi">
+    <div class="contenido-seccion">
+        <h2>ABOUT ME</h2>
+        <p><span>Hi, I'm Itzá Gabriela</span></p><p>Welcome to my portfolio!</p><p>I am a passionate and skilled programmer specializing in both back end and front end web development. With a strong foundation in Java and MySQL, coupled with expertise in HTML5, CSS3, and JavaScript, I create robust and dynamic web applications that provide excellent user experiences.</p>
+        <div class="fila">
+            <!--Aquí van mis datos personales -->
+            <div class="col">
+                <h3>Personal Information</h3>
+                <ul>
+                    <li>
+                        <strong>Phone</strong>
+                        +52-558-553-03-53
+                    </li>
+                    <li>
+                        <strong>E-mail</strong>
+                        gdguar@gmail.com
+                    </li>
+                    <li>
+                        <strong>Adress</strong>
+                        St. Chicoasen MZ81 LT20 Col. Belveder Ajusco
+                    </li>
+
+                </ul>
+
+            </div>
+            <!--Aquí van mis intereses-->
+            <div class="col">
+                <h3>Interests</h3>
+                <div class="contenedor-intereses">
+                    <div class="intereses">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <span>VIDEO GAMES</span>
+                    </div>
+                    <div class="intereses">
+                        <i class="fa-solid fa-music"></i>
+                        <span>MUSIC</span>
+                    </div>
+                    <div class="intereses">
+                        <i class="fa-solid fa-book"></i>
+                        <span>BOOKS</span>
+                    </div>
+                    <div class="intereses">
+                        <i class="fa-solid fa-dumbbell"></i>
+                        <span>EXERCISE</span>
+                    </div>
+                    <div class="intereses">
+                        <i class="fa-solid fa-plane"></i>
+                        <span>TRAVELING</span>
+                    </div>
+                    <div class="intereses">
+                        <i class="fa-solid fa-camera"></i>
+                        <span>PHOTOGRAPHY</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <button>
+            Descargar CV <i class="fa-solid fa-download"></i>
+            <span class="overlay"></span>
+        </button>
+    </div>
+
+  </section>
+
+  <!--SECCION SKILLS-->
+  <section class="skills" id="skills">
+    <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+            <!-- Columna de Technical Skills -->
+            <div class="col">
+                <h3>Technical Skills</h3>
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <div class="barra-skill">
+                        <div class="progreso javascript">
+                            <span>75%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>HTML5 & CSS3</span>
+                    <div class="barra-skill">
+                        <div class="progreso htmlcss">
+                            <span>89%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>JAVA17</span>
+                    <div class="barra-skill">
+                        <div class="progreso java">
+                            <span>80%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>MySQL</span>
+                    <div class="barra-skill">
+                        <div class="progreso sql">
+                            <span>60%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Columna de Soft Skills -->
+            <div class="col">
+                <h3>Soft Skills</h3>
+                <div class="skill">
+                    <span>Organized person</span>
+                    <div class="barra-skill">
+                        <div class="progreso organized">
+                            <span>88%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Patience and Focus</span>
+                    <div class="barra-skill">
+                        <div class="progreso focus">
+                            <span>80%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Fast Learner</span>
+                    <div class="barra-skill">
+                        <div class="progreso learner">
+                            <span>70%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Detail Oriented</span>
+                    <div class="barra-skill">
+                        <div class="progreso Oriented">
+                            <span>78%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- SECCIÓN PORTAFOLIO-->
+ <section id="portafolio" class="portafolio">
+    <div class="contenido-seccion">
+        <h2>PORTAFOLIO</h2>
+        <div class="galeria">
+            <div class="proyecto">
+                <img src="img/programadora1.jpg" alt="prog1">
+                <div class="overlay">
+                    <h3>Diseño Creativo</h3>
+                    <p>Fotografía</p>
+
+                </div>
+
+            </div>
+            <div class="proyecto">
+                <img src="img/programadora2.jpg" alt="prog1">
+                <div class="overlay">
+                    <h3>Diseño Creativo</h3>
+                    <p>Fotografía</p>
+
+                </div>
+
+            </div>
+            <div class="proyecto">
+                <img src="img/programadora3.jpg" alt="prog1">
+                <div class="overlay">
+                    <h3>Diseño Creativo</h3>
+                    <p>Fotografía</p>
+
+                </div>
+
+            </div>
+            <div class="proyecto">
+                <img src="img/programadora4.jpg" alt="prog1">
+                <div class="overlay">
+                    <h3>Diseño Creativo</h3>
+                    <p>Fotografía</p>
+
+                </div>
+
+            </div>
+            <div class="proyecto">
+                <img src="img/programadora5.jpg" alt="prog1">
+                <div class="overlay">
+                    <h3>Diseño Creativo</h3>
+                    <p>Fotografía</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+ </section>
+ <!--SECCION CONTACTO-->
+ <section class="contacto contacto">
+    <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+            <!--Aquí introducimos el formulario-->
+            <div class="col">
+                <input type="text" placeholder="Ingresa tu nombre">
+                <input type="text" placeholder="Número teléfonico">
+                <input type="text" placeholder="Dirección de correo">
+                <input type="text" placeholder="Tema">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <button>
+                    Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                    <span class="overlay"></span>
+                </button>
+
+            </div>
+            <!--Ubicación-->
+            <div class="col">
+                <img src="img/croquis.JPG" alt="mapa">
+                <div class="info">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Chicoasen 20 Belveder Ajusco
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            5585530353
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            Email: gdguar@gmail.com
+                        </li>
+                    </ul>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+ </section>
+ <!--Sección FOOTER-->
+ <footer>
+    <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="redes">
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+
+    </div>
+ </footer>
+
+ <script src="script.js"></script>
+
+
+
+    
+</body>
+</html>
